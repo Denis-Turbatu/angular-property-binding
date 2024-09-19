@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+import { FoodGalleryComponent } from './food-gallery/food-gallery.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, FoodGalleryComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

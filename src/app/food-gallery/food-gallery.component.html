@@ -1,0 +1,14 @@
+<div class="container">
+    <mat-card class="example-card col-6" appearance="outlined" *ngFor="let food of foodGallery">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ food.name }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="food.path" alt="{{ food.name }}">
+    <mat-card-content>
+        <p>
+            {{ food.description }}
+        </p>
+    </mat-card-content>
+    </mat-card>
+</div>
